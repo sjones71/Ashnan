@@ -24,7 +24,7 @@ def main():
         libtcod.console_flush()
 
         libtcod.console_put_char(con, player_x, player_y, ' ', libtcod.BKGND_NONE)
-        
+        #this is just me testing git, it worked!
         action = handle_keys(key)
 
         move = action.get('move')
