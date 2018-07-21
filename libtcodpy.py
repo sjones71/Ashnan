@@ -1127,7 +1127,7 @@ def image_is_pixel_transparent(image,x,y) :
     return _lib.TCOD_image_is_pixel_transparent(image,c_int(x),c_int(y))
 
 def image_load(filename):
-    return _lib.TCOD_image_load(c_char_p(filename))
+    return _lib.TCOD_image_load(c_char_p(filename.encode('utf-8')))
 
 def image_from_console(console):
     return _lib.TCOD_image_from_console(console)
